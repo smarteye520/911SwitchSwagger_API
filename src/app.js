@@ -1,6 +1,7 @@
 const express = require("express");
 const swaggerui = require("swagger-ui-express");
 const swaggerDocument = require("./swagger");
+const cors = require("cors");
 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -9,6 +10,8 @@ const APP_PORT = process.env.APP_PORT;
 const APP_URL = process.env.APP_URL || "localhost";
 const app = express();
 const PORT = process.env.PORT || APP_PORT || 9000;
+
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Welcome!");
