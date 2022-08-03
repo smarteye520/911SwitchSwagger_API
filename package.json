@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/app.ts",
   "scripts": {
-    "start": "nodemon src/app.js",
+    "start": "node src/app.js",
     "build": "node build",
     "lint": "eslint --ext .ts,.tsx ./",
     "test": "eslint --ignore-path .gitignore . --ignore-pattern .eslintrc.js"
