@@ -1,6 +1,6 @@
-import express from "express";
-import swaggerui from "swagger-ui-express";
-import { swaggerDocument } from "./swagger";
+const express = require("express");
+const swaggerui = require("swagger-ui-express");
+const swaggerDocument = require("./swagger");
 
 const dotenv = require("dotenv");
 dotenv.config();

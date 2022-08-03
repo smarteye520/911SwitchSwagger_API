@@ -1,4 +1,6 @@
-export const swaggerDocument = {
+const nodeEnvchecker = require("node-envchecker");
+
+const swaggerDocument = {
   swagger: "2.0",
   info: {
     description:
@@ -1713,3 +1715,5 @@ export const swaggerDocument = {
     },
   },
 };
+
+module.exports = swaggerDocument;
